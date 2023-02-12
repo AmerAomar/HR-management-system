@@ -1,8 +1,9 @@
-function employee(emId,fullname,Department,level,salary){
+function employee(emId,fullname,Department,level,image,salary){
     this.employeeId=emId;
     this.fullName=fullname;
     this.department=Department;
     this.level=level;
+    this.image=image;
     this.salary=salary;
 }
 
@@ -41,13 +42,13 @@ employee.prototype.render = function() {
  }
   
 
-let ghazi=new employee(1000,"Ghazi Samer","Administration","Senior",1500);
-let lina= new employee(1001,"lina ali","Finance","Senior",1500);
-let tamara= new employee(1002,"Tamara Ayoub","Marketing","Senior",1500);
-let safi= new employee(1003,"Safi Walid","Administration","Mid-Senior",1000);
-let omar= new employee(1004,"Omar Zaid","Development","Senior",1500);
-let rana= new employee(1005,"Rana Saleh","Development","Junior",500);
-let hadi= new employee(1006,"Hadi Ahmad","Finance","Mid-Senior",1000);
+let ghazi=new employee(1000,"Ghazi Samer","Administration","Senior","/home/amer/HR-management-system/assets/male.jpg",1500);
+let lina= new employee(1001,"lina ali","Finance","Senior","/home/amer/HR-management-system/assets/female.jpg",1500);
+let tamara= new employee(1002,"Tamara Ayoub","Marketing","Senior","/home/amer/HR-management-system/assets/female.jpg",1500);
+let safi= new employee(1003,"Safi Walid","Administration","Mid-Senior","/home/amer/HR-management-system/assets/male.jpg",1000);
+let omar= new employee(1004,"Omar Zaid","Development","Senior","/home/amer/HR-management-system/assets/male.jpg",1500);
+let rana= new employee(1005,"Rana Saleh","Development","Junior","/home/amer/HR-management-system/assets/female.jpg",500);
+let hadi= new employee(1006,"Hadi Ahmad","Finance","Mid-Senior","/home/amer/HR-management-system/assets/male.jpg",1000);
 ghazi.calc();
 lina.calc();
 tamara.calc();
