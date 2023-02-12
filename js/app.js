@@ -27,7 +27,7 @@ employee.prototype.calc=function(){
         max=1000
     }
     let ranSal;
-    ranSal= Math.floor(Math.random() * (max - min + 1)) + min;
+    ranSal= Math.floor(Math.random() * (max - min )) + min;
     let taxSal;
     this.salary=ranSal - (ranSal * 0.075);
     return taxSal;
@@ -64,8 +64,3 @@ safi.render();
 omar.render();
 rana.render();
 hadi.render();
-
-
-
-
-
