@@ -1,5 +1,6 @@
 body{
-    background-color: rgb(208, 222, 248);
+    background-color: rgb(202, 215, 242);
+    font-family: cursive;
     
 }
 
@@ -9,13 +10,14 @@ header {
     border-style: solid;
     border-radius: 10px;
     border-color: cornflowerblue;
+    margin-bottom: 40px;
     
 }
 
 img{
     width: 140px;
     height: 75px;
-    border-radius: 7px;
+    border: radius 5px;
     
 }
 
@@ -28,17 +30,24 @@ nav ul {
 
 a {
     text-decoration: none;
-    color:rgb(114, 114, 1)
+    color: black;
+    
+
 }
 
 nav ul li {
     padding: 8px;
-    font-size: 20px;
+    font-size: 23px;
     
 }
 h2{
     display: flex;
     margin-right: auto;
+    text-shadow: 0 0 3px #3a3131, 0 0 5px #5d5da5;
+}
+.hint{
+    margin-bottom: 30px;
+    text-shadow: none;
 }
 footer {
     display: flex;
@@ -48,6 +57,11 @@ footer {
     margin-left: 50px;
     padding-top: 16px;
     color: black;
+}
+span{
+    margin-left: 50px;
+    padding-top: 16px;
+    font-size: 30px;
 }
 .employee {
     display: flex;
@@ -61,3 +75,48 @@ footer {
     
     
  }
+
+ #employeecard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+  }
+  
+  #employeecard div {
+    width: 300px;
+    margin: 25px;
+    text-align: center;
+    border-style:groove;
+    border-radius: 30px;
+    border-width: 0.5px;
+    background-color:rgb(99, 159, 238);
+   
+  }
+  
+  #employeecard img {
+    width: 70%;
+    object-fit: cover;
+    height: 200px;
+    padding-top: 10px;
+    
+  }
+  
+  #employeecard p {
+    margin: 10px 0;
+    color:black;
+  }
+  #employeecard div {
+    opacity: 0; /* Hide the div initially */
+    animation: fade-in 2s ease-in-out forwards; /* Use the "fade-in" animation to show the div */
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+ 
