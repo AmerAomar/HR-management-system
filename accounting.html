@@ -5,8 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accounting page</title>
+    <title>HR-Management System</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <style>
+        table {
+            border: 1px solid black;
+            width: 100%;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            padding: 8px;
+        }
+    </style>
 </head>
 
 <body>
@@ -25,13 +41,32 @@
     </header>
 
     <main>
-       
+        <table>
+            <thead>
+                <tr>
+                    <th>Department Name</th>
+                    <th>Number of Employees</th>
+                    <th>Total Salary</th>
+                    <th>Average Salary</th>
+                </tr>
+            </thead>
+            <tbody id="department-table">
+            </tbody>
+            <tfoot>
+                
+            </tfoot>
+        </table>
+
+
+        <script src="./accounting.js"></script>
     </main>
-<hr>
+    <hr>
     <footer>
         <p> &copy Copy right reserved</p>
         <a href="1" class="ft">Email: HR-managementsys@gmail.com</a>
-        
+        <span class="fab fa-facebook"></span>
+        <span class="fab fa-instagram"></span>
+        <span class="fab fa-linkedin"></span>
 
     </footer>
 
