@@ -87,9 +87,11 @@ function check() {
     let storedEmployees = localStorage.getItem("employees");
     if (storedEmployees) {
         employeeArr = JSON.parse(storedEmployees);
+        
+        render();
     }
-    render();
 }
+
 
 const employeeForm = document.getElementById("employeeForm");
 employeeForm.addEventListener("submit", addNewEmployee);
